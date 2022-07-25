@@ -2,7 +2,7 @@ class Solution:
     def peakIndexInMountainArray(self, arr: List[int]) -> int:
         if len(arr) < 3:
             return -1
-        
+        #searching left and right lists
         def search(l, r, arr, mx):
             mid = (l+r)//2
             if arr[mid] > mx[0]:
